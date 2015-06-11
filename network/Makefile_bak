@@ -1,0 +1,11 @@
+CC=gcc
+CFLAGS=-Wall -g -O2 -I ../include -shared -fPIC
+LIBS= -pthread
+
+all:../lib/network.so
+
+../lib/network.so:network.c 
+	$(CC) $(CFLAGS) $(LIBS) -o $@ $^
+
+clean:
+	@rm -rf network.so network.o

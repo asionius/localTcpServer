@@ -1,0 +1,335 @@
+main :forked server
+fork() :forked server
+The USB has been limited
+init the 0th thread
+init the 1th thread
+init the 2th thread
+network_epoll_start
+epoll_wait start
+connect count is 0
+connecting count is 0
+max_fd is 0
+readtask_get_task:lock
+readtask_get_task:unlock
+readtask_get_task:lock
+readtask_get_task:unlock
+readtask_get_task:lock
+readtask_get_task:unlock
+network_client_connect:ip is 127.0.0.1, port is 12000
+after connect
+nfds is 1
+after write send 20 byte
+int to client_list_add 
+0:client_list_add:add a client(127.0.0.1:37817)
+accept handle finish
+epoll_wait start
+connect count is 1
+connecting count is 1
+max_fd is 5
+nfds is 1
+client_list_time_out_check:into
+reading 0
+add task
+readtask_add_task:fd is 5
+readtask_add_task:lock
+readtask_add_task:pthread_cond_signal
+readtask_add_task:unlock
+readtask_get_task:lock
+epoll_wait start
+connect count is 1
+connecting count is 1
+max_fd is 5
+readtask_get_task:unlock
+readtask 1
+read head,fd is 5
+
+readtask:lock
+client list is:
+get_ip_and_port_from_client_list: get 127.0.0.1:37817
+readtask:unlock
+readtask:127.0.0.1:37817
+read head, fd is 5,size is 20
+readtask: packet:command 97 len 0 type 128
+readtask:connect packet:command 97 len 0 type 128
+readtask:write packet:command 98 len 0 type 128
+after read read 20 byte
+pack: command 98 len 0 type 128
+connected to server
+successfully connected to server.
+getHostName
+get hostname is asionius
+
+request_user_login:send packet, command code is 0x9003
+sent_struct
+send_packet fd is 3
+send_packet:lock
+send_packet:pthread_mutex_unlock
+nfds is 1
+send Data 800
+client_list_time_out_check:into
+reading 2
+add task
+readtask_add_task:fd is 5
+readtask_add_task:lock
+readtask_add_task:pthread_cond_signal
+readtask_add_task:unlock
+epoll_wait start
+connect count is 1
+connecting count is 1
+max_fd is 5
+readtask_get_task:lock
+readtask_get_task:unlock
+readtask 3
+read head,fd is 5
+
+readtask:lock
+client list is:
+get_ip_and_port_from_client_list: get 127.0.0.1:37817
+readtask:unlock
+readtask:127.0.0.1:37817
+read head, fd is 5,size is 20
+readtask: packet:command 101 len 780 type 130
+readtask:lock
+readtask:unlock
+read buf,fd is 5,data_len is 780, size is 780
+network_callback:into
+network_callback:net_packet_group_policy.command_code is 0x9003
+process_group_policy_user_login:into fd is 5
+network_client_connect:ip is 127.0.0.1, port is 12000
+nfds is 1
+int to client_list_add 
+0:client_list_add:add a client(127.0.0.1:37818)
+accept handle finish
+epoll_wait start
+connect count is 2
+connecting count is 2
+max_fd is 7
+readtask_get_task:lock
+readtask_get_task:unlock
+after connect
+nfds is 1
+client_list_time_out_check:into
+reading 4
+add task
+readtask_add_task:fd is 7
+readtask_add_task:lock
+readtask_add_task:pthread_cond_signal
+readtask_add_task:unlock
+epoll_wait start
+connect count is 2
+connecting count is 2
+max_fd is 7
+readtask_get_task:lock
+readtask_get_task:unlock
+readtask 5
+read head,fd is 7
+
+readtask:lock
+client list is:
+get_ip_and_port_from_client_list: get 127.0.0.1:37818
+readtask:unlock
+readtask:127.0.0.1:37818
+read head, fd is 7,size is 20
+readtask: packet:command 97 len 0 type 128
+readtask:connect packet:command 97 len 0 type 128
+readtask:write packet:command 98 len 0 type 128
+readtask_get_task:lock
+readtask_get_task:unlock
+after write send 20 byte
+after read read 20 byte
+pack: command 98 len 0 type 128
+connected to server
+successfully connected to server.
+request_group_policy_file:user name is test
+request_group_policy_file:host name is asionius
+
+sent_struct
+send_packet fd is 6
+send_packet:lock
+send_packet:pthread_mutex_unlock
+nfds is 1
+client_list_time_out_check:into
+reading 6
+add task
+readtask_add_task:fd is 7
+readtask_add_task:lock
+readtask_add_task:pthread_cond_signal
+readtask_add_task:unlock
+epoll_wait start
+connect count is 2
+connecting count is 2
+max_fd is 7
+readtask_get_task:lock
+readtask_get_task:unlock
+readtask 7
+read head,fd is 7
+
+readtask:lock
+client list is:
+get_ip_and_port_from_client_list: get 127.0.0.1:37818
+readtask:unlock
+readtask:127.0.0.1:37818
+read head, fd is 7,size is 20
+readtask: packet:command 101 len 780 type 130
+readtask:lock
+readtask:unlock
+send Data 800
+read buf,fd is 7,data_len is 780, size is 780
+network_callback:into
+network_callback:net_packet_group_policy.command_code is 0x10000
+process_request_usb_use:file_id is 1
+sent_struct
+send_packet fd is 7
+send_packet:lock
+send_packet:pthread_mutex_unlock
+send Data 800
+recive_head:lock
+recive_head:unlock
+read head ,size is 20,data_len is 780
+end of recive_head
+data len is 780
+read struct data
+recive_struct:lock
+recive_struct:unlock
+recive Data 780
+process_usb_use_packet: unused usb
+process_usb_use_packet:file_id is 1,usb_is_used is 0
+request_group_policy_file:SUCCESS:file_id is 1
+sent_struct
+send_packet fd is 5
+readtask:lock
+client list is:
+get_ip_and_port_from_client_list: get 127.0.0.1:37818
+readtask:unlock
+readtask:127.0.0.1:37818
+read head, fd is 7,size is -1
+readtask: packet:command 0 len 0 type 0
+send_packet:lock
+recive_head:lock
+recive_head:unlock
+read head ,size is 20,data_len is 780
+end of recive_head
+data len is 780
+read struct data
+recive_struct:lock
+recive_struct:unlock
+recive Data 780
+send_packet:pthread_mutex_unlock
+send Data 800
+nfds is 1
+client_list_time_out_check:into
+reading 8
+add task
+readtask_add_task:fd is 7
+readtask_add_task:lock
+readtask_add_task:pthread_cond_signal
+readtask_add_task:unlock
+epoll_wait start
+connect count is 2
+connecting count is 2
+max_fd is 7
+readtask_get_task:lock
+readtask_get_task:unlock
+readtask 9
+read head,fd is 7
+
+readtask:lock
+client list is:
+get_ip_and_port_from_client_list: get 127.0.0.1:37818
+readtask:unlock
+readtask:127.0.0.1:37818
+read head, fd is 7,size is 20
+readtask: packet:command 99 len 20 type 128
+readtask:disconnect packet:command 99 len 20 type 128
+readtask:write packet:command 100 len 0 type 128
+readtask_delete_fd:lock
+readtask_head is null
+readtask_delete_fd:unlock
+network_server_colse_fd:lock
+client list is:
+int to client_list_del 
+0:client_list_del:list(size:2) del a client(127.0.0.1:37818)
+network_server_colse_fd:unlock
+closed(7) connecting_count is 1
+client list is(count:1):
+readtask_get_task:lock
+readtask_get_task:unlock
+readtask_get_task:lock
+readtask_get_task:unlock
+disconnected to server
+readtask:lock
+client list is:
+get_ip_and_port_from_client_list: get 127.0.0.1:37817
+readtask:unlock
+readtask:127.0.0.1:37817
+read head, fd is 5,size is -1
+readtask: packet:command 0 len 0 type 0
+readtask_get_task:lock
+readtask_get_task:unlock
+nfds is 1
+client_list_time_out_check:into
+reading 10
+add task
+readtask_add_task:fd is 5
+readtask_add_task:lock
+readtask_add_task:pthread_cond_signal
+readtask_add_task:unlock
+readtask_get_task:lock
+epoll_wait start
+readtask_get_task:unlock
+readtask 11
+connect count is 2
+read head,fd is 5
+
+readtask:lock
+client list is:
+get_ip_and_port_from_client_list: get 127.0.0.1:37817
+readtask:unlock
+readtask:127.0.0.1:37817
+read head, fd is 5,size is 20
+readtask: packet:command 99 len 20 type 128
+readtask:disconnect packet:command 99 len 20 type 128
+readtask:write packet:command 100 len 0 type 128
+disconnected to server
+readtask_delete_fd:lock
+readtask_head is null
+readtask_delete_fd:unlock
+network_server_colse_fd:lock
+client list is:
+connecting count is 1
+max_fd is 7
+int to client_list_del 
+0:client_list_del:list(size:1) del a client(127.0.0.1:37817)
+network_server_colse_fd:unlock
+closed(5) connecting_count is 0
+client list is(count:0):
+readtask_get_task:lock
+readtask_get_task:unlock
+nfds is 0
+client_list_time_out_check:into
+client_list_time_out_check:client_list count is 0
+epoll_wait start
+connect count is 2
+connecting count is 0
+max_fd is 7
+nfds is 0
+client_list_time_out_check:into
+client_list_time_out_check:client_list count is 0
+epoll_wait start
+connect count is 2
+connecting count is 0
+max_fd is 7
+nfds is 0
+client_list_time_out_check:into
+client_list_time_out_check:client_list count is 0
+epoll_wait start
+connect count is 2
+connecting count is 0
+max_fd is 7
+nfds is 0
+client_list_time_out_check:into
+client_list_time_out_check:client_list count is 0
+epoll_wait start
+connect count is 2
+connecting count is 0
+max_fd is 7

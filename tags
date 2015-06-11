@@ -1,0 +1,362 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ACCESS_TOKEN_LEN	include/common.h	20;"	d
+ACCESS_TOKEN_SECRET_LEN	include/common.h	28;"	d
+BUFFER_SIZE	include/common.h	60;"	d
+CC	client/Makefile	/^CC=gcc$/;"	m
+CC	network/Makefile	/^CC=gcc$/;"	m
+CC	server/Makefile	/^CC=gcc$/;"	m
+CFLAGS	client/Makefile	/^CFLAGS=-Wall -g -O2 -Wl,-rpath=..\/lib $(INCLUDE)$/;"	m
+CFLAGS	network/Makefile	/^CFLAGS=-g -O2 -I..\/include -shared -fPIC$/;"	m
+CFLAGS	server/Makefile	/^CFLAGS= -g -O2 -Wl,-rpath=..\/lib$/;"	m
+CHECK_TIME_OUT	include/common.h	8;"	d
+CLIENT_H	client/client.h	2;"	d
+CLIENT_H	include/client.h	2;"	d
+CLIENT_ID_LEN	include/common.h	15;"	d
+CLIENT_ID_SECRET_LEN	include/common.h	24;"	d
+CLIENT_NUM	client/client.h	4;"	d
+CLIENT_NUM	include/client.h	4;"	d
+CLIENT_NUM	include/common.h	69;"	d
+CLOCKID	client/test_timer.c	8;"	d	file:
+CLOCKID	network/network.c	15;"	d	file:
+COMMAND_CODE_START	include/common.h	113;"	d
+COMMAND_CODE_TOKEN_REQUEST	include/common.h	114;"	d
+COMMAND_CODE_TOKEN_RESPOND	include/common.h	115;"	d
+COMMAND_CODE_TOKEN_UPDATE	include/common.h	116;"	d
+COMMON_H	include/common.h	2;"	d
+CONTENT_TYPE_GROUP_POLICY_CODE_START	include/common.h	118;"	d
+CONTENT_TYPE_GROUP_POLICY_ERROR_CODE	include/common.h	126;"	d
+CONTENT_TYPE_GROUP_POLICY_ERROR_CONNECT_AD	include/common.h	127;"	d
+CONTENT_TYPE_GROUP_POLICY_ERROR_REQUEST_FILE_ID	include/common.h	129;"	d
+CONTENT_TYPE_GROUP_POLICY_ERROR_REQUEST_POLICY_FILE	include/common.h	130;"	d
+CONTENT_TYPE_GROUP_POLICY_ERROR_REQUEST_RANDOM_STRING	include/common.h	128;"	d
+CONTENT_TYPE_GROUP_POLICY_REQUEST_RANDOM_STRING	include/common.h	119;"	d
+CONTENT_TYPE_GROUP_POLICY_REQUEST_USB_USED	include/common.h	133;"	d
+CONTENT_TYPE_GROUP_POLICY_REQUEST_USER_LOGIN	include/common.h	121;"	d
+CONTENT_TYPE_GROUP_POLICY_RESPOND_RANDOM_STRING	include/common.h	120;"	d
+CONTENT_TYPE_GROUP_POLICY_RESPOND_USB_USED	include/common.h	134;"	d
+CONTENT_TYPE_GROUP_POLICY_RESPOND_USER_LOGIN	include/common.h	122;"	d
+FILE_NAME_MAX_SIZE	include/common.h	61;"	d
+GCC	client/Makefile	/^GCC=gcc$/;"	m
+GCC	network/Makefile	/^GCC=gcc$/;"	m
+GCC	server/Makefile	/^GCC=gcc$/;"	m
+GENERAL_STRING_LEN	include/common.h	95;"	d
+INCLUDE	client/Makefile	/^INCLUDE=-I..\/include -I..\/network$/;"	m
+INCLUDE	server/Makefile	/^INCLUDE=-I..\/include -I..\/network $/;"	m
+INT32U	include/common.h	/^typedef unsigned long INT32U;$/;"	t
+IPV4_LEN	include/common.h	34;"	d
+LENGTH_OF_LISTEN_QUEUE	include/common.h	59;"	d
+LINE_MAX_SIZE	include/common.h	94;"	d
+LOGIN_TIME_OUT	include/common.h	9;"	d
+MAX_BUFF_SIZE	include/common.h	65;"	d
+MAX_CONNECT_NUM	include/common.h	64;"	d
+MAX_LISTEN_NUM	include/common.h	67;"	d
+MAX_PROCESS_NUM	include/common.h	63;"	d
+MYLIB	client/Makefile	/^MYLIB=-L.\/ -L..\/lib -lnetwork$/;"	m
+MYLIB	network/Makefile	/^MYLIB=$/;"	m
+MYLIB	server/Makefile	/^MYLIB=-L.\/ -L..\/lib -lnetwork $/;"	m
+NAME_LEN	include/common.h	33;"	d
+NETWORK_H	include/network.h	2;"	d
+NETWORK_H	network/network.h	2;"	d
+NET_COMMAND_CODE_CONNECT	include/common.h	75;"	d
+NET_COMMAND_CODE_CONNECTED	include/common.h	76;"	d
+NET_COMMAND_CODE_DATA	include/common.h	79;"	d
+NET_COMMAND_CODE_DISCONNECT	include/common.h	77;"	d
+NET_COMMAND_CODE_DISCONNECTED	include/common.h	78;"	d
+NET_COMMAND_CODE_START	include/common.h	74;"	d
+NET_PACKET_TYPE_MY_TYPE_END	include/common.h	89;"	d
+NET_PACKET_TYPE_MY_TYPE_START	include/common.h	83;"	d
+NET_PACKET_TYPE_NULL	include/common.h	84;"	d
+NET_PACKET_TYPE_STRING	include/common.h	85;"	d
+NET_PACKET_TYPE_STRUCT	include/common.h	86;"	d
+NET_PACKET_TYPE_TOKEN	include/common.h	87;"	d
+NET_TIMEOUT	include/common.h	54;"	d
+OBJDIR	client/Makefile	/^OBJDIR=..\/lib$/;"	m
+OBJDIR	network/Makefile	/^OBJDIR=..\/lib$/;"	m
+OBJDIR	server/Makefile	/^OBJDIR=..\/lib$/;"	m
+OBJS	client/Makefile	/^OBJS=$(patsubst %.c,%.o,$(SRCS))$/;"	m
+OBJS	network/Makefile	/^OBJS=$(patsubst %.c,%.o,$(SRCS))$/;"	m
+OBJS	server/Makefile	/^OBJS=$(patsubst %.c,%.o,$(SRCS))$/;"	m
+PASSWD_LEN	include/common.h	42;"	d
+PREFIX	client/Makefile	/^PREFIX=..\/bin$/;"	m
+PREFIX	network/Makefile	/^PREFIX=..\/lib$/;"	m
+PREFIX	server/Makefile	/^PREFIX=..\/bin$/;"	m
+PROCESS_NAME_LEN	include/common.h	14;"	d
+PROJECT	client/Makefile	/^PROJECT=client$/;"	m
+PROJECT	network/Makefile	/^PROJECT=libnetwork.so$/;"	m
+PROJECT	server/Makefile	/^PROJECT=server$/;"	m
+SERVER_PORT_GROUP_POLICY	include/common.h	57;"	d
+SERVICE_NAME_LEN	include/common.h	39;"	d
+SIG	client/test_timer.c	9;"	d	file:
+SIG	network/network.c	16;"	d	file:
+SM3_DIGEST_SIZE	include/common.h	93;"	d
+SMS4_KEY_LEN	include/common.h	19;"	d
+SMS4_KEY_SECRET_LEN	include/common.h	27;"	d
+SRCS	client/Makefile	/^SRCS=client.c$/;"	m
+SRCS	network/Makefile	/^SRCS=$(wildcard *.cpp) $(wildcard *.c)$/;"	m
+SRCS	server/Makefile	/^SRCS=$(wildcard *.cpp) $(wildcard *.c)$/;"	m
+SUBDIR	client/Makefile	/^SUBDIR=..\/network$/;"	m
+SUBDIR	server/Makefile	/^SUBDIR=..\/network$/;"	m
+SUBSYSTEM	client/Makefile	/^SUBSYSTEM=network$/;"	m
+SUBSYSTEM	server/Makefile	/^SUBSYSTEM=network$/;"	m
+SYSLIB	client/Makefile	/^SYSLIB= -pthread$/;"	m
+SYSLIB	network/Makefile	/^SYSLIB= -lpthread -lrt$/;"	m
+SYSLIB	server/Makefile	/^SYSLIB= -pthread$/;"	m
+TASK_SAFED_SERVER_PORT	include/common.h	56;"	d
+THREAD_MODE_LISTEN	include/network.h	14;"	d
+THREAD_MODE_LISTEN	network/network.h	14;"	d
+THREAD_MODE_READ	include/network.h	15;"	d
+THREAD_MODE_READ	network/network.h	15;"	d
+THREAD_MODE_WRITE	include/network.h	16;"	d
+THREAD_MODE_WRITE	network/network.h	16;"	d
+THREAD_READTASK_NUM	include/network.h	19;"	d
+THREAD_READTASK_NUM	network/network.h	19;"	d
+THREAD_WRITETASK_NUM	include/network.h	18;"	d
+THREAD_WRITETASK_NUM	network/network.h	18;"	d
+TIME_OUT	include/common.h	7;"	d
+TKSAFED_H	include/server.h	2;"	d
+TKSAFED_H	server/server.h	2;"	d
+TOKEN_ENC_LEN	include/common.h	96;"	d
+TOKEN_LEN	include/common.h	21;"	d
+TOKEN_SECRET_LEN	include/common.h	29;"	d
+TYPE_FUN_READTASK	include/network.h	/^typedef int (*TYPE_FUN_READTASK)(int,char *, int);$/;"	t
+TYPE_FUN_READTASK	network/network.h	/^typedef int (*TYPE_FUN_READTASK)(int,char *, int);$/;"	t
+TYPE_FUN_TIMER_HANDLE	include/network.h	/^typedef void (*TYPE_FUN_TIMER_HANDLE)(int sig, siginfo_t *si, void *uc);$/;"	t
+TYPE_FUN_TIMER_HANDLE	network/network.h	/^typedef void (*TYPE_FUN_TIMER_HANDLE)(int sig, siginfo_t *si, void *uc);$/;"	t
+TYPE_PROCESS_FRAME	include/network.h	/^typedef int (*TYPE_PROCESS_FRAME)(struct client_node*);$/;"	t
+TYPE_PROCESS_FRAME	network/network.h	/^typedef int (*TYPE_PROCESS_FRAME)(struct client_node*);$/;"	t
+USER_ID_LEN	include/common.h	18;"	d
+USER_NAME_LEN	include/common.h	32;"	d
+ad_connecting_stat	server/server.c	/^static int ad_connecting_stat = 1;$/;"	v	file:
+ad_server_ip	server/server.c	/^char ad_server_ip[IPV4_LEN];$/;"	v
+ad_server_port	server/server.c	/^int ad_server_port;$/;"	v
+callback_readtask	network/network.c	/^TYPE_FUN_READTASK callback_readtask=NULL;$/;"	v
+check	client/client.c	/^    unsigned char check; 			\/\/数据类型$/;"	m	struct:net_packet_polling	file:
+client_id	include/common.h	/^    char client_id[CLIENT_ID_LEN];$/;"	m	struct:token_net_packet
+client_list	include/network.h	/^struct client_list$/;"	s
+client_list	network/network.h	/^struct client_list$/;"	s
+client_list_add	network/network.c	/^int client_list_add(struct client_list *pclientlist,struct client_node *pclient)$/;"	f
+client_list_create	network/network.c	/^struct client_list* client_list_create()$/;"	f
+client_list_del	network/network.c	/^int client_list_del(struct client_list* pclientlist,struct client_node *pclient)$/;"	f
+client_list_get_max_fd	network/network.c	/^int client_list_get_max_fd(struct client_list* pclientlist)$/;"	f
+client_list_get_node	network/network.c	/^struct client_node* client_list_get_node(struct client_list* pClientList,int fd)$/;"	f
+client_list_rest_time_out	network/network.c	/^int client_list_rest_time_out(struct client_list *pclientlist,int fd)$/;"	f
+client_list_show	network/network.c	/^int client_list_show(struct client_list* pClientList)$/;"	f
+client_list_time_out_check	network/network.c	/^int client_list_time_out_check(struct client_list *pclientlist)$/;"	f
+client_node	include/network.h	/^struct client_node$/;"	s
+client_node	network/network.h	/^struct client_node$/;"	s
+client_num	client/client.c	/^int client_num = 0;$/;"	v
+clientlist	network/network.c	/^struct client_list *clientlist=NULL;$/;"	v	typeref:struct:client_list
+cmdFlag	client/client.c	/^    unsigned char cmdFlag;				\/\/版本$/;"	m	struct:net_packet_polling	file:
+cmdFlag	client/client.c	/^    unsigned char cmdFlag;				\/\/版本$/;"	m	struct:net_packet_save	file:
+command_code	include/common.h	/^    int command_code;$/;"	m	struct:token_net_packet
+command_code	include/network.h	/^    unsigned int command_code;			\/\/包类型$/;"	m	struct:net_packet_head
+command_code	network/network.h	/^    unsigned int command_code;			\/\/包类型$/;"	m	struct:net_packet_head
+cond	network/network.c	/^pthread_cond_t cond;$/;"	v
+connect_count	network/network.c	/^static int connect_count = 0;$/;"	v	file:
+connecting_count	network/network.c	/^static int connecting_count = 0;$/;"	v	file:
+content_type	include/common.h	/^    int content_type;$/;"	m	struct:net_packet_group_policy
+count	include/network.h	/^    int count;$/;"	m	struct:client_list
+count	include/network.h	/^    int count;$/;"	m	struct:thread_list
+count	network/network.h	/^    int count;$/;"	m	struct:client_list
+count	network/network.h	/^    int count;$/;"	m	struct:thread_list
+crc	client/client.c	/^    unsigned char crc;$/;"	m	struct:net_packet_polling	file:
+crc	client/client.c	/^    unsigned char crc;$/;"	m	struct:net_packet_save	file:
+data	include/network.h	/^    char *data;$/;"	m	struct:thread_writetask
+data	network/network.h	/^    char *data;$/;"	m	struct:thread_writetask
+data_len	include/network.h	/^    int data_len;$/;"	m	struct:thread_writetask
+data_len	include/network.h	/^    unsigned int data_len;$/;"	m	struct:net_packet_head
+data_len	network/network.h	/^    int data_len;$/;"	m	struct:thread_writetask
+data_len	network/network.h	/^    unsigned int data_len;$/;"	m	struct:net_packet_head
+data_type	include/network.h	/^    unsigned int data_type; 			\/\/数据类型$/;"	m	struct:net_packet_head
+data_type	network/network.h	/^    unsigned int data_type; 			\/\/数据类型$/;"	m	struct:net_packet_head
+dlog	network/Common.c	/^void dlog(const char *fmt, ...)$/;"	f
+dlog_error	network/network.c	/^int dlog_error()$/;"	f
+encryption_type	include/network.h	/^    unsigned int encryption_type;$/;"	m	struct:net_packet_head
+encryption_type	network/network.h	/^    unsigned int encryption_type;$/;"	m	struct:net_packet_head
+epoll_fd	network/network.c	/^int epoll_fd = 0;$/;"	v
+errExit	client/test_timer.c	11;"	d	file:
+etcd_connect	server/server.c	/^int etcd_connect()$/;"	f
+etcd_disconnect	server/server.c	/^int etcd_disconnect()$/;"	f
+etcd_get_file_id	server/server.c	/^int etcd_get_file_id()$/;"	f
+ev	network/network.c	/^struct epoll_event ev, events[20];$/;"	v	typeref:struct:epoll_event
+events	network/network.c	/^struct epoll_event ev, events[20];$/;"	v	typeref:struct:
+fd	include/network.h	/^    int fd;$/;"	m	struct:client_node
+fd	include/network.h	/^    int fd;$/;"	m	struct:thread_readtask
+fd	include/network.h	/^    int fd;$/;"	m	struct:thread_writetask
+fd	network/network.h	/^    int fd;$/;"	m	struct:client_node
+fd	network/network.h	/^    int fd;$/;"	m	struct:thread_readtask
+fd	network/network.h	/^    int fd;$/;"	m	struct:thread_writetask
+fdsr	include/network.h	/^    fd_set fdsr;$/;"	m	struct:thread_node
+fdsr	network/network.h	/^    fd_set fdsr;$/;"	m	struct:thread_node
+fild_id	server/server.c	/^int fild_id = 0;$/;"	v
+file_id	include/common.h	/^    int file_id;$/;"	m	struct:net_packet_group_policy
+getHostName	client/client.c	/^int getHostName(char *pHostName,int n)$/;"	f
+getHostName	server/server.c	/^int getHostName(char *pHostName,int n)$/;"	f
+getProcessName	client/client.c	/^int getProcessName(char *name,int n)$/;"	f
+getProcessName	server/server.c	/^int getProcessName(char *name,int n)$/;"	f
+getServerFd	client/client.c	/^int getServerFd(char *ip,unsigned short port)$/;"	f
+getUserName	client/client.c	/^int getUserName(char *username,int n)$/;"	f
+get_ad_server_fd	server/server.c	/^int get_ad_server_fd(char *ip,unsigned short port)$/;"	f
+get_ip_and_port_from_client_list	network/network.c	/^int get_ip_and_port_from_client_list(int socketfd,char *ip,int *port)$/;"	f
+handler	client/test_timer.c	/^handler(int sig, siginfo_t *si, void *uc)$/;"	f	file:
+handler	network/network.c	/^static void handler(int sig, siginfo_t *si, void *uc)$/;"	f	file:
+head	include/network.h	/^    struct client_node *head;$/;"	m	struct:client_list	typeref:struct:client_list::client_node
+head	include/network.h	/^    struct thread_node *head;$/;"	m	struct:thread_list	typeref:struct:thread_list::thread_node
+head	network/network.h	/^    struct client_node *head;$/;"	m	struct:client_list	typeref:struct:client_list::client_node
+head	network/network.h	/^    struct thread_node *head;$/;"	m	struct:thread_list	typeref:struct:thread_list::thread_node
+host_name	include/common.h	/^    char host_name[NAME_LEN];$/;"	m	struct:net_packet_group_policy
+id	include/network.h	/^    pthread_t id;$/;"	m	struct:thread_node
+id	network/network.h	/^    pthread_t id;$/;"	m	struct:thread_node
+index	include/network.h	/^    int index;$/;"	m	struct:client_node
+index	include/network.h	/^    int index;$/;"	m	struct:thread_node
+index	network/network.h	/^    int index;$/;"	m	struct:client_node
+index	network/network.h	/^    int index;$/;"	m	struct:thread_node
+ip_addr	include/network.h	/^    char ip_addr[IPV4_LEN];$/;"	m	struct:client_node
+ip_addr	network/network.h	/^    char ip_addr[IPV4_LEN];$/;"	m	struct:client_node
+is_ad_server	server/server.c	/^int is_ad_server = 0;$/;"	v
+machine_id	client/client.c	/^    unsigned int machine_id;$/;"	m	struct:net_packet_polling	file:
+main	client/client.c	/^int main(int argc, char* argv[])$/;"	f
+main	client/test_timer.c	/^main(int argc, char *argv[])$/;"	f
+main	server/server.c	/^int main(int argc,char* argv[])$/;"	f
+max_fd	include/network.h	/^    int max_fd;$/;"	m	struct:thread_node
+max_fd	network/network.c	/^static int max_fd = 0;$/;"	v	file:
+max_fd	network/network.h	/^    int max_fd;$/;"	m	struct:thread_node
+mode	include/network.h	/^    int mode;$/;"	m	struct:thread_node
+mode	network/network.h	/^    int mode;$/;"	m	struct:thread_node
+mutex	network/network.c	/^pthread_mutex_t mutex;$/;"	v
+mylock_init	network/network.c	/^int mylock_init()$/;"	f
+mylock_lock	network/network.c	/^int mylock_lock()$/;"	f
+mylock_unlock	network/network.c	/^int mylock_unlock()$/;"	f
+needClose	include/network.h	/^    int needClose;$/;"	m	struct:client_node
+needClose	include/network.h	/^    int needClose;$/;"	m	struct:thread_node
+needClose	network/network.h	/^    int needClose;$/;"	m	struct:client_node
+needClose	network/network.h	/^    int needClose;$/;"	m	struct:thread_node
+net_packet_group_policy	include/common.h	/^struct net_packet_group_policy$/;"	s
+net_packet_head	include/network.h	/^struct net_packet_head $/;"	s
+net_packet_head	network/network.h	/^struct net_packet_head $/;"	s
+net_packet_polling	client/client.c	/^struct net_packet_polling $/;"	s	file:
+net_packet_save	client/client.c	/^struct net_packet_save $/;"	s	file:
+network_callback	server/server.c	/^int network_callback(int fd,char *buf,int n)$/;"	f
+network_client_connect	network/network.c	/^int network_client_connect(char *ip_addr,unsigned short server_port)$/;"	f
+network_client_disconnect	network/network.c	/^int network_client_disconnect(int client_fd)$/;"	f
+network_connect_only	network/network.c	/^int network_connect_only(char *ip_addr,unsigned short server_port)$/;"	f
+network_epoll_init	network/network.c	/^int network_epoll_init(struct thread_list *pthread_list,TYPE_FUN_READTASK callback_task)$/;"	f
+network_epoll_start	network/network.c	/^int network_epoll_start(struct thread_list *pThreadList)$/;"	f
+network_epoll_thread_list_start	network/network.c	/^int network_epoll_thread_list_start(struct thread_list *pThreadList)$/;"	f
+network_epoll_thread_read_task	network/network.c	/^void *network_epoll_thread_read_task(void *args)$/;"	f
+network_epoll_thread_write_task	network/network.c	/^void *network_epoll_thread_write_task(void *args)$/;"	f
+network_process_frame	server/server.c	/^int network_process_frame(struct client_node* pclient)$/;"	f
+network_process_frame_temp	network/network.c	/^int network_process_frame_temp(struct client_node* pclient)$/;"	f
+network_server_colse_fd	network/network.c	/^void network_server_colse_fd(int sockid)$/;"	f
+network_server_init	network/network.c	/^struct thread_list * network_server_init(unsigned short port,TYPE_PROCESS_FRAME pProcessFrame)$/;"	f
+network_server_kill_all_thread	network/network.c	/^int network_server_kill_all_thread(struct thread_list *pThreadList)$/;"	f
+network_server_start	network/network.c	/^int network_server_start(struct thread_list *pThreadList)$/;"	f
+network_server_wait_finish	network/network.c	/^int network_server_wait_finish(struct thread_list *pThreadList)$/;"	f
+network_timer_create	network/network.c	/^int network_timer_create(timer_t *pTimerid,TYPE_FUN_TIMER_HANDLE timer_handle)$/;"	f
+network_timer_create_by_sig	network/network.c	/^int network_timer_create_by_sig(timer_t *pTimerid,int sig,TYPE_FUN_TIMER_HANDLE timer_handle)$/;"	f
+network_timer_setting	network/network.c	/^int network_timer_setting(timer_t timerid,int timeMSec)$/;"	f
+next	include/network.h	/^    struct thread_readtask *next;$/;"	m	struct:thread_readtask	typeref:struct:thread_readtask::thread_readtask
+next	include/network.h	/^    struct thread_writetask *next;$/;"	m	struct:thread_writetask	typeref:struct:thread_writetask::thread_writetask
+next	include/network.h	/^    void *next;$/;"	m	struct:client_node
+next	include/network.h	/^    void *next;$/;"	m	struct:thread_node
+next	network/network.h	/^    struct thread_readtask *next;$/;"	m	struct:thread_readtask	typeref:struct:thread_readtask::thread_readtask
+next	network/network.h	/^    struct thread_writetask *next;$/;"	m	struct:thread_writetask	typeref:struct:thread_writetask::thread_writetask
+next	network/network.h	/^    void *next;$/;"	m	struct:client_node
+next	network/network.h	/^    void *next;$/;"	m	struct:thread_node
+num	network/network.c	/^int num = 0;$/;"	v
+numOfConn	client/client.c	/^int numOfConn = 0;$/;"	v
+pProcess_frame	include/network.h	/^    TYPE_PROCESS_FRAME pProcess_frame;$/;"	m	struct:thread_node
+pProcess_frame	network/network.h	/^    TYPE_PROCESS_FRAME pProcess_frame;$/;"	m	struct:thread_node
+passwd	include/common.h	/^    char passwd[PASSWD_LEN];$/;"	m	struct:token_net_packet
+pclient_list	include/network.h	/^    struct client_list *pclient_list;$/;"	m	struct:thread_node	typeref:struct:thread_node::client_list
+pclient_list	network/network.h	/^    struct client_list *pclient_list;$/;"	m	struct:thread_node	typeref:struct:thread_node::client_list
+port	include/network.h	/^    unsigned port;$/;"	m	struct:client_node
+port	network/network.h	/^    unsigned port;$/;"	m	struct:client_node
+print_siginfo	client/test_timer.c	/^print_siginfo(siginfo_t *si)$/;"	f	file:
+print_siginfo	network/network.c	/^int print_siginfo(siginfo_t *si)$/;"	f
+process_count	network/network.c	/^static int process_count = 0;$/;"	v	file:
+process_group_policy_user_login	server/server.c	/^int process_group_policy_user_login(int fd,struct net_packet_group_policy *pPacket)$/;"	f
+process_name	include/common.h	/^    char process_name[PROCESS_NAME_LEN];$/;"	m	struct:token_net_packet
+process_request_random_string	server/server.c	/^int process_request_random_string(int fd,struct net_packet_group_policy *pPacket)$/;"	f
+process_request_usb_use	server/server.c	/^int process_request_usb_use(int fd,struct net_packet_group_policy *pPacket)$/;"	f
+process_usb_use_packet	server/server.c	/^int process_usb_use_packet(struct net_packet_group_policy *pstGroupPolicy)$/;"	f
+random_string	include/common.h	/^    char random_string[NAME_LEN];$/;"	m	struct:net_packet_group_policy
+readtask_add_task	network/network.c	/^int readtask_add_task(int fd)$/;"	f
+readtask_delete_fd	network/network.c	/^int readtask_delete_fd(int fd)$/;"	f
+readtask_get_task	network/network.c	/^int readtask_get_task(struct thread_readtask *task)$/;"	f
+readtask_head	network/network.c	/^struct thread_readtask *readtask_head=NULL;$/;"	v	typeref:struct:thread_readtask
+readtask_showtask	network/network.c	/^int readtask_showtask()$/;"	f
+readtask_tail	network/network.c	/^struct thread_readtask *readtask_tail=NULL;$/;"	v	typeref:struct:thread_readtask
+recive_data	network/network.c	/^int recive_data(int socket_fd,unsigned char *data,int data_len)$/;"	f
+recive_head	network/network.c	/^int recive_head(int socket_fd,struct net_packet_head *pHead)$/;"	f
+recive_head_time_out	network/network.c	/^int recive_head_time_out(int socket_fd,struct net_packet_head *pHead,int seconds)$/;"	f
+recive_no_use_buf	network/network.c	/^int recive_no_use_buf(int socket_fd,int n)$/;"	f
+recive_struct	network/network.c	/^int recive_struct(int socket_fd,unsigned char *data,int data_len)$/;"	f
+recive_struct_time_out	network/network.c	/^int recive_struct_time_out(int socket_fd,unsigned char *data,int data_len,int seconds)$/;"	f
+requestRandomString	client/client.c	/^int requestRandomString(int socket_fd,char *randomString)$/;"	f
+request_ad_file_id_by_user_name	server/server.c	/^int request_ad_file_id_by_user_name()$/;"	f
+request_ad_random_string	server/server.c	/^int request_ad_random_string(int socket_fd,char *randomString,struct net_packet_group_policy *pPacket)$/;"	f
+request_group_policy_file	server/server.c	/^int request_group_policy_file(int socket_fd,char *randomString,struct net_packet_group_policy *pPacket)$/;"	f
+request_user_login	client/client.c	/^int request_user_login(int socket_fd)$/;"	f
+save_index	client/client.c	/^    unsigned int save_index; 			\/\/数据类型$/;"	m	struct:net_packet_save	file:
+save_menoy	client/client.c	/^    unsigned int save_menoy;$/;"	m	struct:net_packet_save	file:
+select_sleep	network/network.c	/^int select_sleep(int sec,int usec)$/;"	f
+select_time_out	network/network.c	/^int select_time_out(int fd,int second)$/;"	f
+select_time_out_tv	network/network.c	/^int select_time_out_tv(int fd,int sec,int usec)$/;"	f
+sem_lock	network/network.c	/^static sem_t* sem_lock;$/;"	v	file:
+send_command	network/network.c	/^int send_command(int server_fd,char *str,int n)$/;"	f
+send_conclude	network/network.c	/^int send_conclude(int server_fd)$/;"	f
+send_data	network/network.c	/^int send_data(int socket_fd,unsigned char *data,int data_len)$/;"	f
+send_packet	network/network.c	/^int send_packet(int socket_fd,struct net_packet_head *pPacketHeader,char *data,int data_len)$/;"	f
+send_string	network/network.c	/^int send_string(int server_fd,char *str,int n)$/;"	f
+send_struct	network/network.c	/^int send_struct(int server_fd,unsigned char *data,int n)$/;"	f
+server_listen_fd	network/network.c	/^static int server_listen_fd = 0;$/;"	v	file:
+service_name	include/common.h	/^    char service_name[SERVICE_NAME_LEN];$/;"	m	struct:token_net_packet
+setnonblocking	network/network.c	/^void setnonblocking(int sock)$/;"	f
+size	client/client.c	/^    unsigned char size;			\/\/包类型$/;"	m	struct:net_packet_polling	file:
+size	client/client.c	/^    unsigned char size;			\/\/包类型$/;"	m	struct:net_packet_save	file:
+size	include/common.h	/^    int size;$/;"	m	struct:net_packet_group_policy
+size	include/common.h	/^    int size;$/;"	m	struct:token_net_packet
+sockaddr	include/network.h	/^    struct sockaddr_in sockaddr;$/;"	m	struct:client_node	typeref:struct:client_node::sockaddr_in
+sockaddr	network/network.h	/^    struct sockaddr_in sockaddr;$/;"	m	struct:client_node	typeref:struct:client_node::sockaddr_in
+stat	include/network.h	/^    int stat;$/;"	m	struct:client_node
+stat	include/network.h	/^    int stat;$/;"	m	struct:thread_node
+stat	network/network.h	/^    int stat;$/;"	m	struct:client_node
+stat	network/network.h	/^    int stat;$/;"	m	struct:thread_node
+thread_id	include/network.h	/^    pthread_t thread_id;$/;"	m	struct:client_list
+thread_id	network/network.h	/^    pthread_t thread_id;$/;"	m	struct:client_list
+thread_list	include/network.h	/^struct thread_list$/;"	s
+thread_list	network/network.h	/^struct thread_list$/;"	s
+thread_list_add	network/network.c	/^int thread_list_add(struct thread_list *pthread_list,struct thread_node *pthread_node)$/;"	f
+thread_list_createList	network/network.c	/^struct thread_list* thread_list_createList()$/;"	f
+thread_main	network/network.c	/^void thread_main(void *arg)$/;"	f
+thread_node	include/network.h	/^struct thread_node$/;"	s
+thread_node	network/network.h	/^struct thread_node$/;"	s
+thread_readtask	include/network.h	/^struct thread_readtask$/;"	s
+thread_readtask	network/network.h	/^struct thread_readtask$/;"	s
+thread_writetask	include/network.h	/^struct thread_writetask$/;"	s
+thread_writetask	network/network.h	/^struct thread_writetask$/;"	s
+time_out	include/network.h	/^    int time_out;$/;"	m	struct:client_node
+time_out	network/network.h	/^    int time_out;$/;"	m	struct:client_node
+timer_handler_ad_connect	server/server.c	/^static void timer_handler_ad_connect(int sig, siginfo_t *si, void *uc)$/;"	f	file:
+timer_handler_usb_used	server/server.c	/^static void timer_handler_usb_used(int sig, siginfo_t *si, void *uc)$/;"	f	file:
+timer_usb_use	server/server.c	/^timer_t timer_usb_use = 0;$/;"	v
+token	include/common.h	/^    char token[TOKEN_LEN];$/;"	m	struct:token_net_packet
+token_net_packet	include/common.h	/^struct token_net_packet$/;"	s
+usb_is_used	server/server.c	/^int usb_is_used = 1;$/;"	v
+use_epoll	server/server.c	/^int use_epoll = 1;$/;"	v
+user_name	include/common.h	/^    char user_name[NAME_LEN];$/;"	m	struct:net_packet_group_policy
+user_name	include/common.h	/^    char user_name[USER_NAME_LEN];$/;"	m	struct:token_net_packet
+version	include/network.h	/^    unsigned int version;				\/\/版本$/;"	m	struct:net_packet_head
+version	network/network.h	/^    unsigned int version;				\/\/版本$/;"	m	struct:net_packet_head
+writetask_add_task	network/network.c	/^int writetask_add_task(int fd,char *buf, int n)$/;"	f
+writetask_delete_fd	network/network.c	/^int writetask_delete_fd(int fd)$/;"	f
+writetask_get_task	network/network.c	/^int writetask_get_task(struct thread_writetask *task)$/;"	f
+writetask_head	network/network.c	/^struct thread_writetask *writetask_head=NULL;$/;"	v	typeref:struct:thread_writetask
+writetask_showtask	network/network.c	/^int writetask_showtask()$/;"	f
+writetask_tail	network/network.c	/^struct thread_writetask *writetask_tail=NULL;$/;"	v	typeref:struct:thread_writetask

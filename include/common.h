@@ -1,0 +1,151 @@
+#ifndef COMMON_H
+#define COMMON_H 1
+
+//data length seting
+
+//time out
+#define TIME_OUT    (3)         //3s
+#define CHECK_TIME_OUT    (18)   //180s
+#define LOGIN_TIME_OUT (30)     //30s
+
+
+//qx 2014-07-22 20:35:40
+//trustProcessEntry:
+#define PROCESS_NAME_LEN (256)
+#define CLIENT_ID_LEN (16)
+
+//tokenEntry:
+#define USER_ID_LEN (256)
+#define SMS4_KEY_LEN (16)
+#define ACCESS_TOKEN_LEN (16)
+#define TOKEN_LEN (16)
+
+//trustProcessEncEntry:
+#define CLIENT_ID_SECRET_LEN (8)
+
+//tokenEncEntry:
+#define SMS4_KEY_SECRET_LEN (8)
+#define ACCESS_TOKEN_SECRET_LEN (8)
+#define TOKEN_SECRET_LEN (8)
+//qx off
+
+#define USER_NAME_LEN (256)
+#define NAME_LEN (256)
+#define IPV4_LEN    (16)
+
+
+
+//#define PROCESS_NAME_LEN (256)
+#define SERVICE_NAME_LEN (256)
+//#define CLIENT_ID_LEN (16)
+//#define TOKEN_LEN (16)
+#define PASSWD_LEN (256)
+
+
+
+
+
+
+
+
+
+//network seting
+//time out    10 s
+#define NET_TIMEOUT (10)
+
+#define TASK_SAFED_SERVER_PORT (6000)
+#define SERVER_PORT_GROUP_POLICY (12000)
+
+#define LENGTH_OF_LISTEN_QUEUE 20
+#define BUFFER_SIZE 1024
+#define FILE_NAME_MAX_SIZE 512
+
+#define MAX_PROCESS_NUM (3)
+#define MAX_CONNECT_NUM (1024)
+#define MAX_BUFF_SIZE (1024)
+
+#define MAX_LISTEN_NUM (10)
+
+#define CLIENT_NUM (50)
+
+
+
+//COMMAND CODE
+#define NET_COMMAND_CODE_START  (0x60)
+#define NET_COMMAND_CODE_CONNECT   (NET_COMMAND_CODE_START + 1)  //网络连接请求类型
+#define NET_COMMAND_CODE_CONNECTED   (NET_COMMAND_CODE_START + 2) //网络连接回应包类型
+#define NET_COMMAND_CODE_DISCONNECT   (NET_COMMAND_CODE_START + 3)
+#define NET_COMMAND_CODE_DISCONNECTED   (NET_COMMAND_CODE_START + 4)
+#define NET_COMMAND_CODE_DATA   (NET_COMMAND_CODE_START + 5)    //数据包类型
+
+
+//PACK TYPE
+#define NET_PACKET_TYPE_MY_TYPE_START (0x80)
+#define NET_PACKET_TYPE_NULL (NET_PACKET_TYPE_MY_TYPE_START + 0)
+#define NET_PACKET_TYPE_STRING (NET_PACKET_TYPE_MY_TYPE_START + 1)
+#define NET_PACKET_TYPE_STRUCT (NET_PACKET_TYPE_MY_TYPE_START + 2)  //数据类型标识
+#define NET_PACKET_TYPE_TOKEN (NET_PACKET_TYPE_MY_TYPE_START + 3)
+
+#define NET_PACKET_TYPE_MY_TYPE_END (0x90)
+
+
+//files_IF
+#define SM3_DIGEST_SIZE 32
+#define LINE_MAX_SIZE 256
+#define GENERAL_STRING_LEN 256
+#define TOKEN_ENC_LEN 8
+
+typedef unsigned long INT32U;
+
+struct token_net_packet
+{
+    int size;
+    int command_code;
+    char user_name[USER_NAME_LEN];
+    char client_id[CLIENT_ID_LEN];
+    char process_name[PROCESS_NAME_LEN];
+    char service_name[SERVICE_NAME_LEN];
+    char token[TOKEN_LEN];
+    char passwd[PASSWD_LEN];
+};
+
+//command seting
+#define COMMAND_CODE_START 0x80
+#define COMMAND_CODE_TOKEN_REQUEST (0x81)
+#define COMMAND_CODE_TOKEN_RESPOND (0x82)
+#define COMMAND_CODE_TOKEN_UPDATE (0x83)
+
+#define CONTENT_TYPE_GROUP_POLICY_CODE_START (0x9000)
+#define CONTENT_TYPE_GROUP_POLICY_REQUEST_RANDOM_STRING (CONTENT_TYPE_GROUP_POLICY_CODE_START + 1)
+#define CONTENT_TYPE_GROUP_POLICY_RESPOND_RANDOM_STRING (CONTENT_TYPE_GROUP_POLICY_CODE_START + 2)
+#define CONTENT_TYPE_GROUP_POLICY_REQUEST_USER_LOGIN (CONTENT_TYPE_GROUP_POLICY_CODE_START + 3)
+#define CONTENT_TYPE_GROUP_POLICY_RESPOND_USER_LOGIN (CONTENT_TYPE_GROUP_POLICY_CODE_START + 4)
+
+
+
+#define CONTENT_TYPE_GROUP_POLICY_ERROR_CODE (0x9F00)
+#define CONTENT_TYPE_GROUP_POLICY_ERROR_CONNECT_AD  (CONTENT_TYPE_GROUP_POLICY_ERROR_CODE + 1)
+#define CONTENT_TYPE_GROUP_POLICY_ERROR_REQUEST_RANDOM_STRING (CONTENT_TYPE_GROUP_POLICY_ERROR_CODE + 2)
+#define CONTENT_TYPE_GROUP_POLICY_ERROR_REQUEST_FILE_ID (CONTENT_TYPE_GROUP_POLICY_ERROR_CODE + 3)
+#define CONTENT_TYPE_GROUP_POLICY_ERROR_REQUEST_POLICY_FILE (CONTENT_TYPE_GROUP_POLICY_ERROR_CODE + 4)
+
+
+#define CONTENT_TYPE_GROUP_POLICY_REQUEST_USB_USED (0x10000)
+#define CONTENT_TYPE_GROUP_POLICY_RESPOND_USB_USED (0x10001)
+
+
+
+
+struct net_packet_group_policy
+{
+    int size;
+    int content_type;
+    int file_id;
+    char user_name[NAME_LEN];
+    char host_name[NAME_LEN];
+    char random_string[NAME_LEN];
+};
+
+
+
+#endif 
